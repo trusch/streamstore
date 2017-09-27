@@ -13,5 +13,5 @@ func NewReader(base io.Reader) (io.ReadCloser, error) {
 	if err != nil {
 		return nil, err
 	}
-	return storage.NewIOCoppler(xzReader, base), nil
+	return streamstore.NewIOCoppler(xzReader, base), nil
 }

@@ -8,12 +8,12 @@ import (
 
 // Encrypter is a Storage which encrypts with aes
 type Encrypter struct {
-	base storage.Storage
+	base streamstore.Storage
 	key  string
 }
 
 // NewEncrypter returns a new encrypter instance
-func NewEncrypter(base storage.Storage, key string) *Encrypter {
+func NewEncrypter(base streamstore.Storage, key string) *Encrypter {
 	return &Encrypter{base, key}
 }
 

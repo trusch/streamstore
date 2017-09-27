@@ -10,5 +10,5 @@ import (
 // NewWriter returns a new snappy writer
 func NewWriter(base io.Writer) (io.WriteCloser, error) {
 	snappyWriter := snappy.NewWriter(base)
-	return storage.NewIOCoppler(snappyWriter, base), nil
+	return streamstore.NewIOCoppler(snappyWriter, base), nil
 }

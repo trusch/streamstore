@@ -14,13 +14,13 @@ import (
 
 // Encrypter is a Storage which encrypts with aes
 type Encrypter struct {
-	base storage.Storage
+	base streamstore.Storage
 	cert *x509.Certificate
 	key  *ecdsa.PrivateKey
 }
 
 // NewEncrypter returns a new encrypter instance
-func NewEncrypter(base storage.Storage, pubkeyPEM, privkeyPEM []byte) (*Encrypter, error) {
+func NewEncrypter(base streamstore.Storage, pubkeyPEM, privkeyPEM []byte) (*Encrypter, error) {
 	store := &Encrypter{base: base}
 	pubkeyBlock, _ := pem.Decode(pubkeyPEM)
 	if pubkeyBlock == nil {

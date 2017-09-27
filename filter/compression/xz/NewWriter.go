@@ -13,5 +13,5 @@ func NewWriter(base io.Writer) (io.WriteCloser, error) {
 	if err != nil {
 		return nil, err
 	}
-	return storage.NewIOCoppler(writer, base), nil
+	return streamstore.NewIOCoppler(writer, base), nil
 }

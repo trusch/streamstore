@@ -27,5 +27,5 @@ func NewReader(base io.Reader, key string) (io.ReadCloser, error) {
 	}
 	stream := cipher.NewOFB(block, iv[:])
 	reader := &cipher.StreamReader{S: stream, R: base}
-	return storage.NewIOCoppler(reader, base), nil
+	return streamstore.NewIOCoppler(reader, base), nil
 }

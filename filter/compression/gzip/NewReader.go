@@ -14,5 +14,5 @@ func NewReader(base io.Reader) (io.ReadCloser, error) {
 	if err != nil {
 		return nil, err
 	}
-	return storage.NewIOCoppler(gzipReader, base), nil
+	return streamstore.NewIOCoppler(gzipReader, base), nil
 }

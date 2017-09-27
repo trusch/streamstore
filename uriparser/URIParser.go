@@ -45,7 +45,7 @@ func (options Options) Has(key string) bool {
 // NewFromURI creates a pipeline of Storages
 // example: snappy+aes+file:///srv/backups
 // -> compress, encrypt and save as files in /srv/backups
-func NewFromURI(uri string, options Options) (storage.Storage, error) {
+func NewFromURI(uri string, options Options) (streamstore.Storage, error) {
 	u, err := url.Parse(uri)
 	if err != nil {
 		return nil, err
@@ -58,7 +58,7 @@ func NewFromURI(uri string, options Options) (storage.Storage, error) {
 	}
 	options["path"] = path
 	options["url"] = u
-	var store storage.Storage
+	var store streamstore.Storage
 	for i := len(schemes) - 1; i >= 0; i-- {
 		s, err := createStorageByScheme(schemes[i], store, options)
 		if err != nil {
@@ -69,7 +69,7 @@ func NewFromURI(uri string, options Options) (storage.Storage, error) {
 	return store, nil
 }
 
-func createStorageByScheme(scheme string, nextStore storage.Storage, options Options) (storage.Storage, error) {
+func createStorageByScheme(scheme string, nextStore streamstore.Storage, options Options) (streamstore.Storage, error) {
 	switch scheme {
 	case SchemeFile:
 		{

@@ -8,11 +8,11 @@ import (
 
 // Compressor is a storage wrapper which applies gzip compression
 type Compressor struct {
-	base storage.Storage
+	base streamstore.Storage
 }
 
 // NewCompressor returns a new compressor instance
-func NewCompressor(base storage.Storage) *Compressor {
+func NewCompressor(base streamstore.Storage) *Compressor {
 	return &Compressor{base}
 }
 

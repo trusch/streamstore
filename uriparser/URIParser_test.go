@@ -12,7 +12,7 @@ import (
 	. "github.com/onsi/gomega"
 )
 
-func testStorage(storage storage.Storage) {
+func testStorage(storage streamstore.Storage) {
 	writer, err := storage.GetWriter("test")
 	Expect(err).NotTo(HaveOccurred())
 	bs, err := writer.Write([]byte("foobar"))
