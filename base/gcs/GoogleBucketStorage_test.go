@@ -9,7 +9,7 @@ import (
 
 	"cloud.google.com/go/storage"
 
-	. "github.com/trusch/storage/base/gcs"
+	. "github.com/trusch/streamstore/base/gcs"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

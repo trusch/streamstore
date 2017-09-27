@@ -3,7 +3,7 @@ package xz
 import (
 	"io"
 
-	"github.com/trusch/storage"
+	"github.com/trusch/streamstore"
 	"github.com/ulikunitz/xz"
 )
 

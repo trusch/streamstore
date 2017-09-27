@@ -3,7 +3,7 @@ package xz
 import (
 	"io"
 
-	"github.com/trusch/storage"
+	"github.com/trusch/streamstore"
 )
 
 // Compressor is a storage wrapper which applies gzip compression

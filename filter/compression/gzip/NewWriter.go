@@ -4,7 +4,7 @@ import (
 	"compress/gzip"
 	"io"
 
-	"github.com/trusch/storage"
+	"github.com/trusch/streamstore"
 )
 
 // NewWriter returns a new gzip Writer

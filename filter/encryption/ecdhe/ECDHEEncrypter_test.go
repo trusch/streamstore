@@ -6,8 +6,8 @@ import (
 	"os"
 	"path/filepath"
 
-	. "github.com/trusch/storage/base/file"
-	. "github.com/trusch/storage/filter/encryption/ecdhe"
+	. "github.com/trusch/streamstore/base/file"
+	. "github.com/trusch/streamstore/filter/encryption/ecdhe"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

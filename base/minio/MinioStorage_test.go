@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"io"
 
-	. "github.com/trusch/storage/base/minio"
+	. "github.com/trusch/streamstore/base/minio"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

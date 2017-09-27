@@ -7,7 +7,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/trusch/storage/filter/encryption/aes"
+	"github.com/trusch/streamstore/filter/encryption/aes"
 )
 
 // NewWriter returns a new ecdhe writer

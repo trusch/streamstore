@@ -6,7 +6,7 @@ import (
 	"os"
 	"path/filepath"
 
-	. "github.com/trusch/storage/base/file"
+	. "github.com/trusch/streamstore/base/file"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

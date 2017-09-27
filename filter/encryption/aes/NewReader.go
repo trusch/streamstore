@@ -7,7 +7,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/trusch/storage"
+	"github.com/trusch/streamstore"
 )
 
 // NewReader returns a new aes reader

@@ -6,7 +6,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/trusch/storage/filter/encryption/aes"
+	"github.com/trusch/streamstore/filter/encryption/aes"
 )
 
 // NewReader returns a new ecdhe reader

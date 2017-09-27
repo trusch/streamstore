@@ -4,7 +4,7 @@ import (
 	"compress/gzip"
 	"io"
 
-	"github.com/trusch/storage"
+	"github.com/trusch/streamstore"
 )
 
 // NewReader returns a new gzip reader

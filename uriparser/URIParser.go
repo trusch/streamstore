@@ -8,18 +8,18 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/trusch/storage"
+	"github.com/trusch/streamstore"
 
-	"github.com/trusch/storage/base/file"
-	"github.com/trusch/storage/base/gcs"
-	"github.com/trusch/storage/base/mongo"
+	"github.com/trusch/streamstore/base/file"
+	"github.com/trusch/streamstore/base/gcs"
+	"github.com/trusch/streamstore/base/mongo"
 
-	"github.com/trusch/storage/filter/compression/gzip"
-	"github.com/trusch/storage/filter/compression/snappy"
-	"github.com/trusch/storage/filter/compression/xz"
+	"github.com/trusch/streamstore/filter/compression/gzip"
+	"github.com/trusch/streamstore/filter/compression/snappy"
+	"github.com/trusch/streamstore/filter/compression/xz"
 
-	"github.com/trusch/storage/filter/encryption/aes"
-	"github.com/trusch/storage/filter/encryption/ecdhe"
+	"github.com/trusch/streamstore/filter/encryption/aes"
+	"github.com/trusch/streamstore/filter/encryption/ecdhe"
 )
 
 const (

@@ -3,7 +3,7 @@ package aes
 import (
 	"io"
 
-	"github.com/trusch/storage"
+	"github.com/trusch/streamstore"
 )
 
 // Encrypter is a Storage which encrypts with aes

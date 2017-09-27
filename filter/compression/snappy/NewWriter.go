@@ -4,7 +4,7 @@ import (
 	"io"
 
 	"github.com/golang/snappy"
-	"github.com/trusch/storage"
+	"github.com/trusch/streamstore"
 )
 
 // NewWriter returns a new snappy writer

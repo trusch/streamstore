@@ -5,8 +5,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/trusch/storage"
-	. "github.com/trusch/storage/uriparser"
+	"github.com/trusch/streamstore"
+	. "github.com/trusch/streamstore/uriparser"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

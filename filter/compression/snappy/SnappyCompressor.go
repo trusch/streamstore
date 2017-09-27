@@ -3,7 +3,7 @@ package snappy
 import (
 	"io"
 
-	"github.com/trusch/storage"
+	"github.com/trusch/streamstore"
 )
 
 // Compressor is a storage wrapper which applies snappy compression
